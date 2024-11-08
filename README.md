@@ -1,5 +1,5 @@
 <div align="right">
-   <a href="README_CN.md">中文</a> | <strong>English</strong>
+   <strong>中文</strong> | <a href="README.md">English</a>
 </div>
 
 <img src="https://www.serv00.com/static/ct8/img/logo.jpg" alt="serv00 logo" width="50" height="50" align="right" />
@@ -8,37 +8,37 @@
 
 <h1> serv00-auto-scripts </h1>
 
-<p>Serv00/CT8 - Free Host Auto Renewal (Automatic SSH and PM2) and Other Scripts</p>
+<p>Serv00/CT8 - 免费主机自动续期（自动SSH以及PM2）及其他脚本。</p>
 
 </div>
 
 <hr/>
 
 <div align="center">
-<a href="https://panel.serv00.com/">serv00 Demo</a> | 
-<a href="https://www.serv00.com/">serv00 Official</a> | 
-<a href="https://docs.serv00.com/">serv00 Docs</a> | 
-<a href="https://forum.serv00.com/">serv00 Forum</a>
+<a href="https://panel.serv00.com/">serv00面板</a> | 
+<a href="https://www.serv00.com/">serv00官网</a> | 
+<a href="https://docs.serv00.com/">serv00文档</a> | 
+<a href="https://forum.serv00.com/">serv00社区</a>
 </div>
 
 <hr/>
 
 <div align="center">
-<a href="https://panel.ct8.pl/">CT8 Demo</a> | 
-<a href="https://www.ct8.pl/">CT8 Official</a> | 
-<a href="https://wiki.mydevil.net/">CT8 Docs</a> | 
-<a href="https://forum.ct8.pl/">CT8 Forum</a>
+<a href="https://panel.ct8.pl/">CT8面板</a> | 
+<a href="https://www.ct8.pl/">CT8官网</a> | 
+<a href="https://wiki.mydevil.net/">CT8文档</a> | 
+<a href="https://forum.ct8.pl/">CT8社区</a>
 </div>
 
 <hr/>
 
-## Usage
+## 使用方法
 
-1. In the GitHub repository, go to the top right corner and click on `Settings`
+1. 在 GitHub 仓库中，进入右上角`Settings`
 
-2. On the sidebar, find `Secrets and variables`, click to expand and select `Actions`, then click `New repository secret`
+2. 在侧边栏找到`Secrets and variables`，点击展开选择`Actions`，点击`New repository secret`
     
-3. Then [create](https://lopins.github.io/serv00-auto-scripts/) a `Secret` named `ACCOUNTS_JSON`, set its value as the account and password string in JSON format, as follows:  
+3. 然后[创建](https://lopins.github.io/serv00-auto-scripts/)一个名为`ACCOUNTS_JSON`的`Secret`，将 JSON 格式的账号密码字符串作为它的值，如下格式：  
 
 ``` json
 [  
@@ -48,54 +48,92 @@
 ]
 ```
 
-> The `panel` parameter is the panel number, which is the value in the `panel*.serv00.com` from the registration email you received.
+> 其中`panel`参数为面板域名，即为你所收到注册邮件的`panel*.serv00.com`值。
 
-4. **Optional** Creating two parameters `Secret` for the Telegram bot: `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`
+4. **非必须** 创建Telegram 机器人两个参数的 `Secret`：`TELEGRAM_BOT_TOKEN` 和  `TELEGRAM_CHAT_ID`
 
-## Unable to SSH Login
+## SSH登录不上
 
-> If you cannot log in, it is due to an IP Ban, click here to unlock: [Ban](https://www.serv00.com/ip_unban/)
+> 登录不上是因为Ban IP, 点击此处解锁： [Ban](https://www.serv00.com/ip_unban/)
 
-> If still unable to log in: Please use `FinalShell` below, and check `Smart Overseas Acceleration`. If login fails, choose `Cancel` in the pop-up box, and enter `[the SSH password from your email]` in the pop-up box.
+> 还是登录不上的话： 请使用下方 `FinalShell`，并勾上 `智能海外加速`，登录失败在弹出框选择`取消`，在弹出框填入`[邮件中的SSH密码]`
 
 ## FinalShell
 
-FinalShell is an integrated server and network management software, not only an SSH client but also a powerful development and operations tool that fully meets the needs of developers and operators.
+FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,还是功能强大的开发,运维工具,充分满足开发,运维需求.
 
-### Features
+### 特色功能
 
-Cloud synchronization, free overseas server remote desktop acceleration, SSH acceleration, localized command input box with auto-completion, command history, and custom command parameters.
+云端同步,免费海外服务器远程桌面加速,ssh加速,本地化命令输入框,支持自动补全,命令历史,自定义命令参数
 
-- Windows X64 version, download address: <http://www.hostbuf.com/downloads/finalshell_windows_x64.exe>
+- Windows X64版,下载地址: <http://www.hostbuf.com/downloads/finalshell_windows_x64.exe>
 
-- macOS Arm version, supporting m1, m2, m3 CPUs, download address: <http://www.hostbuf.com/downloads/finalshell_macos_arm64.pkg>
+- macOS Arm版,支持m1,m2,m3 cpu,下载地址: <http://www.hostbuf.com/downloads/finalshell_macos_arm64.pkg>
 
-- macOS X64 version, supporting older Intel CPUs, download address: <http://www.hostbuf.com/downloads/finalshell_macos_x64.pkg>
+- macOS X64版,支持旧款intel cpu,下载地址: <http://www.hostbuf.com/downloads/finalshell_macos_x64.pkg>
 
-- Linux X64 version, download address: <http://www.hostbuf.com/downloads/finalshell_linux_x64.deb>
+- Linux X64版,下载地址: <http://www.hostbuf.com/downloads/finalshell_linux_x64.deb>
 
-- Linux Arm64 version, download address: <http://www.hostbuf.com/downloads/finalshell_linux_arm64.deb>
+- Linux Arm64版,下载地址: <http://www.hostbuf.com/downloads/finalshell_linux_arm64.deb>
 
-- Linux LoongArch64 Longxin version, download address: <http://www.hostbuf.com/downloads/finalshell_linux_loong64.deb>
+- Linux LoongArch64龙芯版,下载地址: <http://www.hostbuf.com/downloads/finalshell_linux_loong64.deb>
 
-## Other Services
+## 其他服务
 
-- PHP Configuration: <https://docs.serv00.com/PHP/#php-version>
+- PHP配置: <https://docs.serv00.com/PHP/#php-version>
 
-- Memcached Configuration: <https://docs.serv00.com/Memcached/>
+- Memcached配置: <https://docs.serv00.com/Memcached/>
 
-  Start: memcached -s /usr/home/LOGIN/domains/DOMAIN/memcached.sock -d
+  启动：memcached -s /usr/home/LOGIN/domains/DOMAIN/memcached.sock -d
 
-- Redis Configuration: <https://docs.serv00.com/Memcached/>
+- Redis配置: <https://docs.serv00.com/Memcached/>
 
-## Special Note
+## 特别注意
 
-Although serv00 has a 10-year usage period, it cannot clear logs generated by Apache and other services. Under capacity constraints, high-traffic services that generate large logs and high-frequency tasks are not recommended.
+serv00虽然有10年使用期，但无法清除Apache和其它服务产生的日志，在容量限制情况下，不建议大日志产生的高流量服务和高频次作业任务。
 
-## Star Trend
+## Star趋势
 
 [![Stargazers Over Time](https://starchart.cc/lopins/serv00-auto-scripts.svg?variant=adaptive)](https://starchart.cc/lopins/serv00-auto-scripts)
 
-## JSON Generator
+## JSON生成
 
 - <https://lopins.github.io/serv00-auto-scripts/>
+
+## TG机器人
+
+### 创建 Telegram Bot 并获取 Chat ID
+
+#### 步骤 1: 创建 `Telegram Bot`
+
+1. **打开 `Telegram` 应用**：
+
+   - 打开你的 `Telegram` 应用程序。
+
+2. **搜索 `BotFather`**：
+
+   - 在搜索栏中搜索 `@BotFather` 并点击进入。
+
+3. **创建新机器人**：
+
+   - 发送 `/start` 命令启动 BotFather。
+   - 发送 `/newbot` 命令创建一个新的机器人。
+   - 按照提示输入机器人的名称（可以是你喜欢的任何名称）。
+   - 输入机器人的用户名（必须以 `bot` 结尾，例如 `MyBotNameBot`）。
+   - BotFather 会生成一个 API token 并提供给你。请保存这个 token，后续会用到。
+
+#### 步骤 2: 获取 Chat ID
+
+为了能够向特定的用户或群组发送消息，你需要知道他们的 `Chat ID`。你可以通过创建一个简单的 `Telegram Bot` 来获取 `Chat ID`。
+
+1. **创建一个简单的 Bot**：
+
+   - 使用你刚刚生成的 `API token` 创建一个简单的 `Bot`。
+
+2. **设置 Webhook 或轮询**：
+
+   - 你可以选择设置 `Webhook` 或使用轮询来接收消息。这里我们使用轮询方式。
+
+3. **获取 Chat ID**：
+
+   - 当用户发送消息给你的 `Bot` 时，你可以从消息中提取 `Chat ID`。
